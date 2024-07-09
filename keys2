@@ -1,3 +1,5 @@
+1. Программа, которая запрашивает у пользователя последовательно день его рождения, месяц и год
+
 import datetime   
 
 tekushii_god = datetime.datetime.now  ().year  
@@ -6,6 +8,8 @@ name = input()  # считываем строку и кладём её в пер
 print("Какой сейчас год?") 
 year = input() 
 print('Ваш Возраст, ' + str(year - int(name)) + '!')
+
+2. Функция, которая определяет какому дню недели соответствует эта дата?
 #include <iostream>
 #include <conio.h>
 #include <string>
@@ -45,6 +49,9 @@ int main()
     _getch();
     return 0;
 }
+
+
+3.	Функция, которая определяет - високосный это был год, или нет?
 function prevLeapYear(y) {
   --y // убрать, если надо <= переданного, а не строго <
   y &= ~3
@@ -60,6 +67,18 @@ output.textContent = e.target.validity.valid
     : "Enter valid year"
 })
 <input type=number value=2022 required min=1 max=10000> <output></output>
+
+4.	Функция, которая определяет сколько сейчас лет пользователю?
+1 import datetime
+2 
+3 print('Введи дату своего рождения.')
+4 day = int(input('День: '))
+5 month = int(input('Месяц: '))
+6 year = int(input('Год: '))
+7 TODAY = datetime.date.today()
+8 print(f'Tебе {TODAY.year - year - ((TODAY.month, TODAY.day) < (month, day))} лет!')
+
+5.	Вывод в консоль даты рождения пользователя в формате дд мм гггг, где цифры прорисованы звёздочками (*), как на электронном табло.
 class ConsoleDatePickerMini
 {
     public int Left { get; }
