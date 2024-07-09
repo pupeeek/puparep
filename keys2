@@ -1,0 +1,8 @@
+import datetime   
+
+tekushii_god = datetime.datetime.now  ().year  
+print('Ваш год рождения ?')  
+name = input()  # считываем строку и кладём её в переменную name  
+print("Какой сейчас год?") 
+year = input() 
+print('Ваш Возраст, ' + str(year - int(name)) + '!')
